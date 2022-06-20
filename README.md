@@ -111,11 +111,24 @@ In our approach, we have done three algorithms to build Prefix interchange dista
 In First approach, Manually each moves for permutations having length 2,3,4 and
 5 were written using separate functions. And then these functions were invoked
 recursively.
+
+![Screenshot (213)](https://user-images.githubusercontent.com/53015576/174569025-10d7c8ca-9210-4f74-80c9-277277e6fb71.png)
+
+
 # 2
 In Second approach, there is a function which will automatically creates moves
 for particular permutation of length. Then using tree data structure, moves were
 implemented recursively.
+
+![Screenshot (214)](https://user-images.githubusercontent.com/53015576/174569062-a39655f8-4702-4cbd-ab4a-3cb4727e89dc.png)
+
+
 # 3
 In Third approach, there is a function which will automatically creates moves for
 particular permutation of length. Then using graph data structure and with the
 help of the in-built functions in package NetworkX, moves were implemented.
+The result of this approach comes to an end with the shortest distance to sort permutation of length up to 7. After 7 it takes more than 10 hours time to get the
+result. The result is shown below:
+
+![Screenshot (215)](https://user-images.githubusercontent.com/53015576/174569181-deaafd4c-a663-446c-bacf-7f2140b77a21.png)
+
