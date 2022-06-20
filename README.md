@@ -32,3 +32,90 @@ containing n elements there are n! permutations. For example, the set S contains
 3 elements and 3! = 6 permutations are there. We denote a permutation by the
 symbol π. And a permutation along with the elements are generally represented
 as π = π1 π2 π3 π4.... πi... πin where i is the index/position in the permutation.
+
+# Prefix block Interchange operation
+Consider a permutation π = 43251, a prefix block is a sub-permutation containing
+the first element of the permutation. The following examples shows the prefixes
+of the permutation π.
+a. 43251
+b. 43251
+c. 43251
+d. 43251
+e. 43251
+The following examples show some blocks that are not prefixes.
+a. 43251
+b. 43251
+c. 43251
+d. 43251
+A prefix block interchange operation interchanges two blocks in a permutation in which one block is a prefix block. The following examples show some
+prefix block interchange operation.
+
+![Screenshot (210)](https://user-images.githubusercontent.com/53015576/174562120-ec8cd22f-e15a-4803-88c1-0f98114682b5.png)
+
+# How to specify a prefix block interchange operation?
+We first number the gaps between the elements in the permutation. See the example.
+
+
+
+![Screenshot (211)](https://user-images.githubusercontent.com/53015576/174562423-5f7fa0ed-c84e-4402-8652-34fe5265d220.png)
+
+
+A prefix block interchange operation is specified by 4 indices (or gaps). For example, β(1,3,5,6) is the prefix block interchange that interchanges the blocks [43]
+with [1]. Then the resultant permutation is 12543.
+# The sorting problem
+Sort the given permutation with minimum number of moves. For example,
+the permutation 43251 can be sorted with 2 moves. The sequence of moves is
+shown below. 43251 β(1,2,3,4) → 23451 β(1,5,5,6) → 12345
+# Cayley Graph
+Cayley graphs were originally proposed as a generic theoretical model for analyzing symmetric interconnection networks. The most notable feature of the
+Cayley graph is its universality. The Cayley graph represents a class of highperformance interconnection network with a small degree and diameter, good
+connectivity and simple routing algorithms.
+Some attractive properties of this Cayley graph interconnection network include:
+vertex symmetry, small degree, a sub-logarithmic diameter, extendibility, high
+connectivity (robustness), easy routing, regularity of topology, fault tolerance,
+extensibility and embeddability of other topologies.
+
+Sorting permutations with various operations has applications in macro rearrangement of genes in a genome and the design of computer interconnection networks.
+# 1. Application in computational biology - GENOME REARRANGEMENT
+Various global rearrangements of permutations, such as reversals and transpositions have recently become of interest because of their applications in computational molecular biology.These various problems are of interest because the
+permutations can be used to represent sequences of genes in chromosomes, and
+the global rearrangements then represent evolutionary events. As a result, we call
+these problems genome rearrangement problems.Genome rearrangement problems seem to be unlike previously studied algorithmic problems on sequences,
+so new methods have had to be developed to deal with them.we study sev7
+eral genome rearrangement problems as interesting and challenging algorithmic
+problems in their own right, including some problems for which the global rearrangement has no immediate biological equivalent. For example, we define a
+block-interchange to be a rearrangement that swaps any two substrings of the
+permutation Understanding how different two organisms are is one question addressed by the comparative genomics field. A well-accepted way to estimate
+the evolutionary distance between genomes of two organisms is finding the rearrangement distance, which is the smallest number of rearrangements needed to
+transform one genome into another. By representing genomes as permutations,
+one of them can be represented as the identity permutation, and, so, we reduce
+the problem of transforming one permutation into another to the problem of sorting a permutation using the minimum number of rearrangements.
+# 2. APPLICATION IN INTERCONNECTION OF NETWORK DESIGN
+In the field of interconnection network design: the so-called prefix block interchange operation, which forces operations to act on a prefix of the permutation
+rather than on an arbitrary interval. This is introduced as a way of reducing the
+size of the generated network while maintaining a low value for its diameter,
+thereby guaranteeing a low maximum communication delay .(the diameter of a
+network represents the maximum communication delay between two nodes in
+the network.
+# 3 Literature Survey
+The first approximation algorithm to solve SBT (SORTING BY TRANSPOSITIONS
+)was devised in 1998 by Bafna and Pevzer , with a 1.5 ratio, based on the properties of a structure called the cycle graph. In 2006, Elias and Hartman presented a 1.375-approximation algorithm (EH algorithm) with time complexity
+O(n2)O(n2), the best known approximation solution so far for SBT. In 2012, Bulteau, Fertin and Rusu demonstrated that SBT is NPNP- hard.In a later study,
+the time complexity of the EH algorithm was improved to O(nlogn)O(nlogn) by
+Cunha et al. Improvements to the EH algorithm, including heuristics, were proposed by Dias and Dias .
+
+# Our approach
+In our approach, we have done three algorithms to build Prefix interchange distance database for sorting permutation using Prefix block interchange operation.
+9
+# 1
+In First approach, Manually each moves for permutations having length 2,3,4 and
+5 were written using separate functions. And then these functions were invoked
+recursively.
+# 2
+In Second approach, there is a function which will automatically creates moves
+for particular permutation of length. Then using tree data structure, moves were
+implemented recursively.
+# 3
+In Third approach, there is a function which will automatically creates moves for
+particular permutation of length. Then using graph data structure and with the
+help of the in-built functions in package NetworkX, moves were implemented.
