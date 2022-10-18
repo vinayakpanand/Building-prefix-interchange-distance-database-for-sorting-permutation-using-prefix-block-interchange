@@ -1,4 +1,4 @@
-# BUILDING-PREFIX-INTERCHANGE-DISTANCE-DATABASE-FOR-SORTING-PERMUTATIONS-USING-PREFIX-BLOCK-INTERCHANG
+# BUILDING-PREFIX-INTERCHANGE-DISTANCE-DATABASE-FOR-SORTING-PERMUTATIONS-USING-PREFIX-BLOCK-INTERCHANGE-OPERATION
 Sorting by prefix block interchange is a combinatorial optimization problem in which a given permutation is to be sorted with minimum number of prefix block interchanges. The minimum number of prefix block interchanges required to sort a permutation is called the prefix block interchange distance of the permutation . The complexity class of this problem is unknown. As part of this project we build a database of prefix block interchange distances for permutations with length at most 7. Building such a database is useful in multiple ways. This could help understand the distribution of prefix block interchange distances, or it could help partition the symmetric group into various classes with same distance, or it could be used as a benchmark data for studying the optimality of various algorithms.
 # BACKGROUND
 
